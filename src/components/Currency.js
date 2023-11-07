@@ -5,20 +5,20 @@ const Budget = () => {const [currency, setCurrency] = useState('');const { dispa
 
 const handleChange = (event) => {
     setCurrency(event.target.value);
-    changeCurrency()
+    changeCurrency(event.target.value)
   };
 
-  const changeCurrency = () => {
+  const changeCurrency = (value) => {
     dispatch({
         type: 'CHG_CURRENCY',
-        payload: currency,
+        payload: value,
     });
   }
 
 useEffect(() => {console.log(currency);}, [currency] )
 
 return (
-    <div className="alert alert-secondary">
+    <div className="alert alert-primary" >
     <select id="inputGroupSelect02" onChange={handleChange}>
             <option defaultValue>Currency (£ Pound)</option>
             <option value="$" name="dollar">$ Dollar</option>
