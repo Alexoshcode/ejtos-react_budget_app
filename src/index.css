@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-circle.btn-xs {
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 10px 5px 10px;
+    width: 40px;
+    height: 40px;
+}
+
+select.currencydropdown{
+    background-color: aquamarine;
+    border: none;
+}
+
+select.currencydropdown option{
+    background-color: aquamarine;
+}
+select.currencydropdown option:hover{
+    background-color:rgb(149, 149, 149);
+}
+.currencyBox{
+    background-color: aquamarine !important;
+}
